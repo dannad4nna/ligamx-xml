@@ -1,6 +1,6 @@
 # Diseño y validación de resultados de Liga MX con XML y DTD
 
-## 1. Propósito
+## 1. Proposito
 
 Esta practica tiene como proposito diseñar un un formato XML para representar informacion estructurada de partidos de futbol 
 
@@ -49,3 +49,13 @@ liga
 | Posesion | Atributo |dato estadistico numerico o porcentaje |
 | Tarjetas |Elemento | es una lista repetitiva de eventos|
 
+
+Determine las cardinalidades y completar la siguiente tabla:
+
+|Regla                               | Expresion DTD
+Una liga contiene una o mas jornadas | + 
+Una jornada contiene uno o mas partidos| +
+Un partido tiene exactamente un  local | ?
+Un partido tiene exactamente un visitante | ?
+Una estadistica opcional | *
+Puede haber cero o mas tarjetas | *
