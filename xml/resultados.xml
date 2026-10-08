@@ -8,3 +8,29 @@
     </partido>
   </jornada>
 </liga>
+
+<partido id="P001" fecha="2026-09-27" estado="finalizado">
+  <estadio>Estadio Ejemplo</estadio>
+  <equipoLocal nombre="Equipo A">
+    <estadisticas>
+      <posesion>55</posesion>
+      <tiros>14</tiros>
+      <tirosPuerta>6</tirosPuerta>
+      <faltas>11</faltas>
+      <tirosEsquina>5</tirosEsquina>
+      <tarjeta tipo="amarilla" jugador="Jugador 1" minuto="34"/>
+    </estadisticas>
+  </equipoLocal>
+  <equipoVisitante nombre="Equipo B">
+    <estadisticas>
+      <posesion>45</posesion>
+      <tiros>9</tiros>
+      <tirosPuerta>3</tirosPuerta>
+      <faltas>13</faltas>
+      <tirosEsquina>3</tirosEsquina>
+      <tarjeta tipo="amarilla" jugador="Jugador 2" minuto="60"/>
+      <tarjeta tipo="roja" jugador="Jugador 3" minuto="85"/>
+    </estadisticas>
+  </equipoVisitante>
+  <marcador local="2" visitante="1"/>
+</partido>
