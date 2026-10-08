@@ -12,3 +12,27 @@
 <!ELEMENT faltas (#PCDATA)>
 <!ELEMENT tirosEsquina (#PCDATA)>
 <!ELEMENT tarjeta EMPTY>
+
+<!ATTLIST liga
+  nombre    CDATA #REQUIRED
+  temporada CDATA #REQUIRED>
+
+<!ATTLIST jornada
+  numero CDATA #REQUIRED>
+
+<!ATTLIST partido
+  id     ID #REQUIRED
+  fecha  CDATA #REQUIRED
+  estado (programado|en_juego|finalizado|suspendido) #REQUIRED>
+
+<!ATTLIST equipoLocal     nombre CDATA #REQUIRED>
+<!ATTLIST equipoVisitante nombre CDATA #REQUIRED>
+
+<!ATTLIST marcador
+  local     CDATA #REQUIRED
+  visitante CDATA #REQUIRED>
+
+<!ATTLIST tarjeta
+  tipo    (amarilla|roja) #REQUIRED
+  jugador CDATA #IMPLIED
+  minuto  CDATA #IMPLIED>
