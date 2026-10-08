@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<liga nombre="Liga MX" temporada="Apertura 2026">
+  <jornada numero="12">
+    <partido id="P001" fecha="2026-09-27" estado="finalizado">
+      <equipoLocal nombre="Equipo A"/>
+      <equipoVisitante nombre="Equipo B"/>
+      <marcador local="2" visitante="1"/>
+    </partido>
+  </jornada>
+</liga>
