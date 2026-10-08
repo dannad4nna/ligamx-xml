@@ -4,7 +4,7 @@
 
 Esta practica tiene como proposito diseñar un un formato XML para representar informacion estructurada de partidos de futbol 
 
-## 2. Analisis de la informacion (Actividad 1)
+## 2. Analisis de la informacion 
 
 | Pregunta | Respuesta |
 
@@ -17,7 +17,7 @@ Esta practica tiene como proposito diseñar un un formato XML para representar i
 | Que datos son obligatorios? |id, fecha, numero de jornada, equipos, marcador |
 | Cuales son opcionales? |estadio, estadidisticas  |
 
-## 3. Modelo jerarquico (Actividad 2)
+## 3. Modelo jerarquico 
 
 
 liga
@@ -32,4 +32,20 @@ liga
     ├── partido
     └── partido
 
+
+
+
+## 4. Elemento o atributo
+
+| Informacion | Elemento/Atributo | Justificacion |
+| Jornada |Atributo | |
+| Fecha | |Atributo |Es una propiedad directa del partido |
+| ID del partido |Atributo |Es el identificador unico |
+| Equipo local |Elemento | Representa una entidad compleja que suele contener sub-elementos|
+| Equipo visitante |Elemento |Igual que el equipo local, es una estructura que contiene mas informacion |
+| Goles | Elemento|Puede contener estructura detallada (minuto, quien metio gol) |
+| Estadio |Elemento |es un objeto  independiente que puede incluir atributos  |
+| Estado del partido |Atributo |Simple dato de estado |
+| Posesion | Atributo |dato estadistico numerico o porcentaje |
+| Tarjetas |Elemento | es una lista repetitiva de eventos|
 
